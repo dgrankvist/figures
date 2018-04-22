@@ -4,6 +4,7 @@
 int main(void){
 	int quit = 0;
 	int userChoice;
+	clearScreen();
 	while(quit == 0){
 		userChoice = figMenu();
 		if(userChoice == 1){

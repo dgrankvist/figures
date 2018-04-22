@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "figs.h"
 
 int figMenu(void){
 	int i, choice;
@@ -25,3 +26,4 @@ int figMenu(void){
 	else
 		return choice;
 }
+

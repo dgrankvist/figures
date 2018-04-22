@@ -1,4 +1,4 @@
-OBJ = main.o menu.o triangle.o circle.o rectangle.o square.o horizLine.o interLine.o
+OBJ = main.o menu.o screen.o triangle.o circle.o rectangle.o square.o horizLine.o interLine.o
 APPNAME = figures.a
 TAR = figures.tar
 
