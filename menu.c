@@ -2,6 +2,7 @@
 
 int figMenu(void){
 	int i, choice;
+	int scanStat; // for checking if scanf executed correctly
 	for(i=0;i<50;i++){
 		printf("-");
 	}
@@ -14,10 +15,13 @@ int figMenu(void){
 	printf("6: Intersecting lines\n");
 	printf("0: Exit\n");
 	printf("Please make your choice and press ENTER: ");
-	scanf("%d", &choice); 
+	scanStat = scanf("%d", &choice); 
 	for(i=0;i<50;i++){
 		printf("-");
 	}
 	printf("\n");
-	return choice;
+	if(scanStat != 1)
+		return 7;
+	else
+		return choice;
 }

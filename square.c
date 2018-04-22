@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "figs.h"
 
-void triangle(void){
-	printf("Triangle will be shown here");
+void square(void){
+	printf("Square will be shown here");
 }

@@ -6,8 +6,33 @@ int main(void){
 	int userChoice;
 	while(quit == 0){
 		userChoice = figMenu();
-		switch(userChoice){
-			case '1':
+		if(userChoice == 1){
+			triangle();
+		}
+		else if(userChoice == 2){
+			circle();
+		}
+		else if(userChoice == 3){
+			rectangle();
+		}
+		else if(userChoice == 4){
+			square();
+		}
+		else if(userChoice == 5){
+			horizLine();
+		}
+		else if(userChoice == 6){
+			interLine();
+		}
+		else if(userChoice == 0){
+			quit = 1;
+		}
+		else{
+			quit = 0;
+		}
+
+	/*	switch(userChoice){
+			case 1:
 				triangle();
 				break;
 			case 2:
@@ -32,6 +57,6 @@ int main(void){
 				quit = 0;
 				break;
 		}
-
+*/ 
 	}
 }
