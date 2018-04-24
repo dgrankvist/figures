@@ -2,5 +2,19 @@
 #include "figs.h"
 
 void circle(void){
-	printf("Circle will be shown here");
+	gotoxy(15, 0);
+	setColor(GREEN);
+	printf("           ***            \n");
+	printf("        *********         \n");
+	printf("      *************      \n");
+	printf("     ***************     \n");
+	printf("    *****************    \n");
+	printf("    *****************    \n");
+	printf("    *****************    \n");
+	printf("     ***************     \n");
+	printf("      *************      \n");
+	printf("        *********        \n");
+	printf("           ***           \n");
+	printf("                         \n");
+	setColor(0); // reset color
 }

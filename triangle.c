@@ -2,5 +2,19 @@
 #include "figs.h"
 
 void triangle(void){
-	printf("\nTriangle will be shown here\n");
+	gotoxy(15, 0);
+	setColor(RED);
+	printf("            *            \n");
+	printf("           ***           \n");
+	printf("          *****          \n");
+	printf("         *******         \n");
+	printf("        *********        \n");
+	printf("       ***********       \n");
+	printf("      *************      \n");
+	printf("     ***************     \n");
+	printf("    *****************    \n");
+	printf("   *******************   \n");
+	printf("  *********************  \n");
+	printf(" *********************** \n");
+	setColor(0); // reset color
 }

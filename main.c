@@ -5,6 +5,7 @@ int main(void){
 	int quit = 0;
 	int userChoice;
 	clearScreen();
+	gotoxy(1, 1);
 	while(quit == 0){
 		userChoice = figMenu();
 		if(userChoice == 1){
@@ -25,7 +26,8 @@ int main(void){
 		else if(userChoice == 6){
 			interLine();
 		}
-		else if(userChoice == 0){
+		else if(userChoice == 9){
+			clearScreen();
 			quit = 1;
 		}
 		else{
