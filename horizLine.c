@@ -2,5 +2,10 @@
 #include "figs.h"
 
 void horizLine(void){
-	printf("Horizontal line will be shown here");
+	setColor(MAGENTA);
+	gotoxy(12,35);
+	printf(" *********************** \n");
+	gotoxy(13,35);
+	printf(" *********************** \n");
+	setColor(0); // reset color
 }

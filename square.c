@@ -2,5 +2,11 @@
 #include "figs.h"
 
 void square(void){
-	printf("Square will be shown here");
+	setColor(BLUE);
+	int i;
+	for(i=0;i<12;i++){
+		gotoxy(i+8,35);
+		printf(" *********************** \n");
+	}
+	setColor(0); // reset color
 }

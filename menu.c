@@ -7,10 +7,82 @@ int figMenu(void){
 	int i, choice, userin;
 	// char userin;
 	gotoxy(1,1);
-	for(i=0;i<25;i++){
+	for(i=0;i<60;i++){
 		printf("-");
 	}
-	printf("\nFIGURES\n");
+	// print "logo"
+	setColor(RED);
+	printf("\nFFFFFF  ");
+	setColor(GREEN);
+	printf("II   ");
+	setColor(YELLOW);
+	printf("GGG  ");
+	setColor(BLUE);
+	printf("UU  UU  ");
+	setColor(MAGENTA);
+	printf("RRR   ");
+	setColor(CYAN);
+	printf("EEEEEE  ");
+	setColor(WHITE);
+	printf("SSS\n");
+	setColor(RED);
+	printf("FF      ");
+	setColor(GREEN);
+	printf("II  ");
+	setColor(YELLOW);
+	printf("GG    ");
+	setColor(BLUE);
+	printf("UU  UU  ");
+	setColor(MAGENTA);
+	printf("RR RR ");
+	setColor(CYAN);
+	printf("EE     ");
+	setColor(WHITE);
+	printf("SS\n");
+	setColor(RED);
+	printf("FFFFFF  ");
+	setColor(GREEN);
+	printf("II ");
+	setColor(YELLOW);
+	printf("GG  GG ");
+	setColor(BLUE);
+	printf("UU  UU  ");
+	setColor(MAGENTA);
+	printf("RRRR  ");
+	setColor(CYAN);
+	printf("EEEEEE  ");
+	setColor(WHITE);
+	printf("SSS\n");
+	setColor(RED);
+	printf("FF      ");
+	setColor(GREEN);
+	printf("II ");
+	setColor(YELLOW);
+	printf("GG   G ");
+	setColor(BLUE);
+	printf("UU  UU  ");
+	setColor(MAGENTA);
+	printf("RR R  ");
+	setColor(CYAN);
+	printf("EE        ");
+	setColor(WHITE);
+	printf("SS\n");
+	setColor(RED);
+	printf("FF      ");
+	setColor(GREEN);
+	printf("II  ");
+	setColor(YELLOW);
+	printf("GGGG   ");
+	setColor(BLUE);
+	printf("UUUU   ");
+	setColor(MAGENTA);
+	printf("RR  R ");
+	setColor(CYAN);
+	printf("EEEEEE  ");
+	setColor(WHITE);
+	printf("SSS\n\n");
+	
+	//print menu options
 	setColor(RED);
 	printf("1: Triangle\n");
 	setColor(GREEN);
@@ -25,7 +97,8 @@ int figMenu(void){
 	printf("6: Intersecting lines\n");
 	setColor(WHITE);
 	printf("9: Exit\n");
-	for(i=0;i<25;i++){
+	gotoxy(20, 0);
+	for(i=0;i<60;i++){
 		printf("-");
 	}
 	printf("\n");
