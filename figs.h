@@ -1,3 +1,8 @@
+/*
+ * Header file for figures application. Includes definition of constants and enumerations,
+ * as well as function prototypes for all functions used in the application.
+ */
+
 // constant definitions
 #define ESC 0x1B
 

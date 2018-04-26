@@ -1,3 +1,7 @@
+/*
+ * Main function
+ */
+
 #include <stdio.h>
 #include "figs.h"
 
@@ -7,6 +11,7 @@ int main(void){
 	clearScreen();
 	gotoxy(1, 1);
 	while(quit == 0){
+		// call function figMenu(), store the return value in variable userChoice
 		userChoice = figMenu();
 		if(userChoice == 1){
 			clearScreen();

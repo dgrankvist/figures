@@ -1,11 +1,19 @@
+/*
+ * Menu function
+ * Input argument: none
+ * Output argument: 
+ * 		int choice (if user inputs a single-digit integer)
+ * 		int 0 (if user inputs something else)
+ * If user inputs 0, 7, 8 or something other than a single-digit
+ * integer, the while loop in the main function will run this 
+ * function again.
+ */
+
 #include <stdio.h>
-#include <stdlib.h> // for atoi()
-#include <string.h> // for strlen()
 #include "figs.h"
 
 int figMenu(void){
 	int i, choice, userin;
-	// char userin;
 	gotoxy(1,1);
 	for(i=0;i<60;i++){
 		printf("-");
@@ -106,10 +114,11 @@ int figMenu(void){
 	setColor(BLACK);
 	printf("Please make your choice and press ENTER: ");
 	setColor(0); // reset settings
-	userin = getchar();
-	choice = userin - '0';
+	userin = getchar(); // take first input from stdin
+	choice = userin - '0'; // convert ASCII character to integer
 	printf("\n");
 	printf("\n");
+	// if a single-digit integer is given, return it. Else return 0.
 	if((choice > 0) && (choice < 10))
 		return choice;
 	else

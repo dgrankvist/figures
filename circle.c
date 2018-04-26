@@ -1,8 +1,15 @@
+/*
+ * Circle drawing function
+ * Input argument: none
+ * Output argument: none
+ */
+
 #include <stdio.h>
 #include "figs.h"
 
 void circle(void){
 	setColor(GREEN);
+	// draw the circle in specified position
 	gotoxy(8,35);
 	printf("           ***           \n");
 	gotoxy(9,35);

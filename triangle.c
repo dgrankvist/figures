@@ -1,8 +1,15 @@
+/*
+ * Triangle drawing function
+ * Input argument: none
+ * Output argument: none
+ */
+
 #include <stdio.h>
 #include "figs.h"
 
 void triangle(void){
 	setColor(RED);
+	// draw the triangle in specified position
 	gotoxy(8,35);
 	printf("            *            \n");
 	gotoxy(9,35);
